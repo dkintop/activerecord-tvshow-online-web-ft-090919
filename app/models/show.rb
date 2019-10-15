@@ -21,7 +21,7 @@ class Show < ActiveRecord::Base
   end 
   
   def self.popular_shows 
-    self.all.select do |s|
+    self.select do |s|
       s.rating > 5
     end 
   end 
